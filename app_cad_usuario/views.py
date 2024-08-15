@@ -12,8 +12,11 @@ def login(request):
 def cadastro(request):
     if request.method == 'POST':
         name = request.POST.get('nome')
+        print(name)
         email = request.POST.get('email')
+        print(email)
         senha = request.POST.get('senha')
+        print(senha)
         aniversario = request.POST.get('aniversario')
         
         new_data = usuarios(username=name, email=email, password=senha, date_of_birth=aniversario)
