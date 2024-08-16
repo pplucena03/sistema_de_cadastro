@@ -5,18 +5,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LoginPage</title>
-    <link rel="stylesheet" href="{% static 'account/cadastro/cadastro.css'%}">
+    <title>SignIn</title>
+    <link rel="stylesheet" href="{% static 'account/cadastro.css'%}">
 </head>
 <body>
-    <div class="container">
+    <div class="texto">
         <h1>Cadastre-se</h1>
-    <form action="cadastro.html" method="POST"> 
-        <input type="text" placeholder="username" class="field" name="nome">
-        <input type="email" placeholder="email" class="field" name="email">
-        <input type="password" placeholder="senha" class="field" name="senha">
-        <input type="date" placeholder="aniversário" class="field" name="aniversario">
-        <input type="submit" value="Criar conta" class="btn">
+    <form action="" method="POST"> 
+        {% csrf_token %}
+        <table>
+            {{form.as_table}}
+        </table>
+        <input type="submit">
     </form>
 </div>
 </html>

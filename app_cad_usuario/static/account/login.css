@@ -27,7 +27,7 @@ form{
     margin-top: 50px;
     text-align: center;
 }
-input{
+table{
     padding: 12px 0;
     margin-bottom: 10px;
     border-radius: 3px;
@@ -36,6 +36,7 @@ input{
     width: 90%;
     font-size: 16px;
     transition: border .2s, background-color .2s;
+    border-color: black;
 }
 form .field{
     background-color: #ECF0F1;
