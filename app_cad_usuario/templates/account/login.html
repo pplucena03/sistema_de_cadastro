@@ -13,10 +13,8 @@
         <h1>Login</h1>
     <form action="" method="POST">
         {% csrf_token%}
-        <table>
-            {{form.as_table}}   
-        </table>
-        <button type="submit">enviar</button>
+        {{ form.as_p }} 
+        <input type="submit" value="enviar">
     </form>
     <div class="pass-link">
         <a href="cadastro" > Não possui uma conta? Cadastre-se </a>
